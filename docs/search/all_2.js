@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['info_3',['INFO',['../namespacecustom__logger.html#a63fe1d9108db91c5ad3042e410a31d09',1,'custom_logger']]]
+  ['error_4',['ERROR',['../namespacecustom__logger.html#a57eb57c2ac92c1a6b9f44a478c5e0230',1,'custom_logger']]]
 ];

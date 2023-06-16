@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['error_2',['ERROR',['../namespacecustom__logger.html#a57eb57c2ac92c1a6b9f44a478c5e0230',1,'custom_logger']]]
+  ['custom_5flogger_2',['custom_logger',['../namespacecustom__logger.html',1,'']]],
+  ['custom_5flogger_2epy_3',['custom_logger.py',['../custom__logger_8py.html',1,'']]]
 ];
