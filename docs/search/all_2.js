@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['error_4',['ERROR',['../namespacecustom__logger.html#a57eb57c2ac92c1a6b9f44a478c5e0230',1,'custom_logger']]]
+  ['error_3',['ERROR',['../namespaceQUnfold_1_1utils_1_1custom__logger.html#a62d10a927e09653552404814c5fe627a',1,'QUnfold::utils::custom_logger']]]
 ];
