@@ -1,4 +1,4 @@
 <map id="QUnfold.core.QUnfold.QUnfold" name="QUnfold.core.QUnfold.QUnfold">
 <area shape="rect" id="node1" title="Base class of QUnfold algorithms." alt="" coords="5,5,227,32"/>
-<area shape="rect" id="node2" href="$classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html" title="Represents the QUnfold class which uses QUBO algorithms." alt="" coords="13,80,219,121"/>
+<area shape="rect" id="node2" href="$classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html" title="Represents the QUnfold class which uses QUBO approach to solve the unfolding problem." alt="" coords="13,80,219,121"/>
 </map>

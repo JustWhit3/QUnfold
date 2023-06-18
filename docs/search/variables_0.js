@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['measured_44',['measured',['../classQUnfold_1_1core_1_1QUnfold_1_1QUnfold.html#a935b85005d2ce519b757352d1f678290',1,'QUnfold::core::QUnfold::QUnfold']]]
+  ['bin_5fcontents_56',['bin_contents',['../classQUnfold_1_1core_1_1QUnfold_1_1QUnfold.html#afd79e7ab55654feec4fafe94d4f0c05c',1,'QUnfold::core::QUnfold::QUnfold']]],
+  ['bin_5fedges_57',['bin_edges',['../classQUnfold_1_1core_1_1QUnfold_1_1QUnfold.html#a367372db88c91a5b40e66c2197acca78',1,'QUnfold::core::QUnfold::QUnfold']]]
 ];
