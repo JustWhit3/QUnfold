@@ -97,7 +97,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a88b9343ea8f1267a664f85a028021715"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the response matrix.  <a href="classQUnfold_1_1core_1_1QUnfold_1_1QUnfold.html#a88b9343ea8f1267a664f85a028021715">More...</a><br /></td></tr>
 <tr class="separator:a88b9343ea8f1267a664f85a028021715"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a272d85fc24a2b003138909718c58858b"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQUnfold_1_1core_1_1QUnfold_1_1QUnfold.html#a272d85fc24a2b003138909718c58858b">printMeasured</a> (self)</td></tr>
-<tr class="memdesc:a272d85fc24a2b003138909718c58858b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the measured histogram.  <a href="classQUnfold_1_1core_1_1QUnfold_1_1QUnfold.html#a272d85fc24a2b003138909718c58858b">More...</a><br /></td></tr>
+<tr class="memdesc:a272d85fc24a2b003138909718c58858b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the measured histogram bin contents and bin edges.  <a href="classQUnfold_1_1core_1_1QUnfold_1_1QUnfold.html#a272d85fc24a2b003138909718c58858b">More...</a><br /></td></tr>
 <tr class="separator:a272d85fc24a2b003138909718c58858b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab090689dff02ca3ee445a578adeac181"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQUnfold_1_1core_1_1QUnfold_1_1QUnfold.html#ab090689dff02ca3ee445a578adeac181">plotResponse</a> (self)</td></tr>
 <tr class="memdesc:ab090689dff02ca3ee445a578adeac181"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plot the response matrix with matplotlib style.  <a href="classQUnfold_1_1core_1_1QUnfold_1_1QUnfold.html#ab090689dff02ca3ee445a578adeac181">More...</a><br /></td></tr>
@@ -106,8 +106,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a63bff4888f07f07b1209ce07a98eead2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save the plotted response matrix with matplotlib style to a file.  <a href="classQUnfold_1_1core_1_1QUnfold_1_1QUnfold.html#a63bff4888f07f07b1209ce07a98eead2">More...</a><br /></td></tr>
 <tr class="separator:a63bff4888f07f07b1209ce07a98eead2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8097fc1baf9a73739896dd80a4931cf"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQUnfold_1_1core_1_1QUnfold_1_1QUnfold.html#af8097fc1baf9a73739896dd80a4931cf">plotMeasured</a> (self)</td></tr>
+<tr class="memdesc:af8097fc1baf9a73739896dd80a4931cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plot the measured distribution histogram.  <a href="classQUnfold_1_1core_1_1QUnfold_1_1QUnfold.html#af8097fc1baf9a73739896dd80a4931cf">More...</a><br /></td></tr>
 <tr class="separator:af8097fc1baf9a73739896dd80a4931cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f78a03924108645cd5c89cd44bf70a2"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQUnfold_1_1core_1_1QUnfold_1_1QUnfold.html#a7f78a03924108645cd5c89cd44bf70a2">saveMeasuredPlot</a> (self, path)</td></tr>
+<tr class="memdesc:a7f78a03924108645cd5c89cd44bf70a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save the plot of the measured distribution histogram into path.  <a href="classQUnfold_1_1core_1_1QUnfold_1_1QUnfold.html#a7f78a03924108645cd5c89cd44bf70a2">More...</a><br /></td></tr>
 <tr class="separator:a7f78a03924108645cd5c89cd44bf70a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -152,7 +154,7 @@ Public Attributes</h2></td></tr>
 <p>Initialize a <a class="el" href="classQUnfold_1_1core_1_1QUnfold_1_1QUnfold.html" title="Base class of QUnfold algorithms.">QUnfold</a> object. </p>
 <pre class="fragment">        *args: Variable-length arguments. The supported constructor signatures are:
             - QUnfold(): Initializes an empty QUnfold object.
-            - QUnfold(response, measured): Initializes a QUnfold object with the given response matrix and measured histogram.
+            - QUnfold(response, measured_bin_contents): Initializes a QUnfold object with the given response matrix and measured histogram bin contents.
 </pre><dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">AssertionError</td><td>If the constructor signature is not supported or the inputs are incorrect. </td></tr>
@@ -180,6 +182,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Plot the measured distribution histogram. </p>
 
 </div>
 </div>
@@ -219,7 +223,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Print the measured histogram. </p>
+<p>Print the measured histogram bin contents and bin edges. </p>
 
 </div>
 </div>
@@ -268,6 +272,14 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Save the plot of the measured distribution histogram into path. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>The file path to save the plot. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
