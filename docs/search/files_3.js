@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['qunfold_2epy_38',['QUnfold.py',['../QUnfold_8py.html',1,'']]],
-  ['qunfoldqubo_2epy_39',['QUnfoldQUBO.py',['../QUnfoldQUBO_8py.html',1,'']]]
+  ['linear_5falgebra_2epy_46',['linear_algebra.py',['../linear__algebra_8py.html',1,'']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['custom_5flogger_2epy_36',['custom_logger.py',['../custom__logger_8py.html',1,'']]]
+  ['binary_5fencoder_2epy_44',['binary_encoder.py',['../binary__encoder_8py.html',1,'']]]
 ];

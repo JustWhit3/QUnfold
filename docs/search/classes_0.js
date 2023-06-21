@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['qunfold_27',['QUnfold',['../classQUnfold_1_1core_1_1QUnfold_1_1QUnfold.html',1,'QUnfold::core::QUnfold']]],
-  ['qunfoldqubo_28',['QUnfoldQUBO',['../classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html',1,'QUnfold::core::QUnfoldQUBO']]]
+  ['binaryencoder_33',['BinaryEncoder',['../classQUnfold_1_1utils_1_1binary__encoder_1_1BinaryEncoder.html',1,'QUnfold::utils::binary_encoder']]]
 ];

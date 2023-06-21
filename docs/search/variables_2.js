@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['response_59',['response',['../classQUnfold_1_1core_1_1QUnfold_1_1QUnfold.html#a4790b0978e7226c639d2db9431738176',1,'QUnfold::core::QUnfold::QUnfold']]]
+  ['encoding_5fbits_64',['encoding_bits',['../classQUnfold_1_1utils_1_1binary__encoder_1_1BinaryEncoder.html#adbca7bf710822dcd7fd114f33c4da6c4',1,'QUnfold::utils::binary_encoder::BinaryEncoder']]]
 ];

@@ -1,5 +1,12 @@
 var searchData=
 [
-  ['savemeasuredplot_23',['saveMeasuredPlot',['../classQUnfold_1_1core_1_1QUnfold_1_1QUnfold.html#a7f78a03924108645cd5c89cd44bf70a2',1,'QUnfold::core::QUnfold::QUnfold']]],
-  ['saveresponseplot_24',['saveResponsePlot',['../classQUnfold_1_1core_1_1QUnfold_1_1QUnfold.html#a63bff4888f07f07b1209ce07a98eead2',1,'QUnfold::core::QUnfold::QUnfold']]]
+  ['binary_5fencoder_18',['binary_encoder',['../namespaceQUnfold_1_1utils_1_1binary__encoder.html',1,'QUnfold::utils']]],
+  ['core_19',['core',['../namespaceQUnfold_1_1core.html',1,'QUnfold']]],
+  ['custom_5flogger_20',['custom_logger',['../namespaceQUnfold_1_1utils_1_1custom__logger.html',1,'QUnfold::utils']]],
+  ['linear_5falgebra_21',['linear_algebra',['../namespaceQUnfold_1_1utils_1_1linear__algebra.html',1,'QUnfold::utils']]],
+  ['qunfold_22',['QUnfold',['../namespaceQUnfold_1_1core_1_1QUnfold.html',1,'QUnfold.core.QUnfold'],['../classQUnfold_1_1core_1_1QUnfold_1_1QUnfold.html',1,'QUnfold.core.QUnfold.QUnfold']]],
+  ['qunfold_2epy_23',['QUnfold.py',['../QUnfold_8py.html',1,'']]],
+  ['qunfoldqubo_24',['QUnfoldQUBO',['../namespaceQUnfold_1_1core_1_1QUnfoldQUBO.html',1,'QUnfold.core.QUnfoldQUBO'],['../classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html',1,'QUnfold.core.QUnfoldQUBO.QUnfoldQUBO']]],
+  ['qunfoldqubo_2epy_25',['QUnfoldQUBO.py',['../QUnfoldQUBO_8py.html',1,'']]],
+  ['utils_26',['utils',['../namespaceQUnfold_1_1utils.html',1,'QUnfold']]]
 ];

@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['response_21',['response',['../classQUnfold_1_1core_1_1QUnfold_1_1QUnfold.html#a4790b0978e7226c639d2db9431738176',1,'QUnfold::core::QUnfold::QUnfold']]],
-  ['result_22',['RESULT',['../namespaceQUnfold_1_1utils_1_1custom__logger.html#a68ffc697cd0b881111690ff92281624b',1,'QUnfold::utils::custom_logger']]]
+  ['plotmeasured_14',['plotMeasured',['../classQUnfold_1_1core_1_1QUnfold_1_1QUnfold.html#af8097fc1baf9a73739896dd80a4931cf',1,'QUnfold::core::QUnfold::QUnfold']]],
+  ['plotresponse_15',['plotResponse',['../classQUnfold_1_1core_1_1QUnfold_1_1QUnfold.html#ab090689dff02ca3ee445a578adeac181',1,'QUnfold::core::QUnfold::QUnfold']]],
+  ['printmeasured_16',['printMeasured',['../classQUnfold_1_1core_1_1QUnfold_1_1QUnfold.html#a272d85fc24a2b003138909718c58858b',1,'QUnfold::core::QUnfold::QUnfold']]],
+  ['printresponse_17',['printResponse',['../classQUnfold_1_1core_1_1QUnfold_1_1QUnfold.html#a88b9343ea8f1267a664f85a028021715',1,'QUnfold::core::QUnfold::QUnfold']]]
 ];
