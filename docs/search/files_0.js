@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_5f_5finit_5f_5f_2epy_44',['__init__.py',['../core_2____init_____8py.html',1,'(Global Namespace)'],['../utils_2____init_____8py.html',1,'(Global Namespace)']]]
+  ['_5f_5finit_5f_5f_2epy_40',['__init__.py',['../core_2____init_____8py.html',1,'(Global Namespace)'],['../plot_2____init_____8py.html',1,'(Global Namespace)'],['../utils_2____init_____8py.html',1,'(Global Namespace)']]]
 ];

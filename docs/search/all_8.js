@@ -1,7 +1,12 @@
 var searchData=
 [
-  ['plotmeasured_15',['plotMeasured',['../classQUnfold_1_1core_1_1QUnfold_1_1QUnfold.html#af8097fc1baf9a73739896dd80a4931cf',1,'QUnfold::core::QUnfold::QUnfold']]],
-  ['plotresponse_16',['plotResponse',['../classQUnfold_1_1core_1_1QUnfold_1_1QUnfold.html#ab090689dff02ca3ee445a578adeac181',1,'QUnfold::core::QUnfold::QUnfold']]],
-  ['printmeasured_17',['printMeasured',['../classQUnfold_1_1core_1_1QUnfold_1_1QUnfold.html#a272d85fc24a2b003138909718c58858b',1,'QUnfold::core::QUnfold::QUnfold']]],
-  ['printresponse_18',['printResponse',['../classQUnfold_1_1core_1_1QUnfold_1_1QUnfold.html#a88b9343ea8f1267a664f85a028021715',1,'QUnfold::core::QUnfold::QUnfold']]]
+  ['binary_5fencoder_15',['binary_encoder',['../namespaceQUnfold_1_1utils_1_1binary__encoder.html',1,'QUnfold::utils']]],
+  ['core_16',['core',['../namespaceQUnfold_1_1core.html',1,'QUnfold']]],
+  ['custom_5flogger_17',['custom_logger',['../namespaceQUnfold_1_1utils_1_1custom__logger.html',1,'QUnfold::utils']]],
+  ['plot_18',['plot',['../namespaceQUnfold_1_1plot.html',1,'QUnfold']]],
+  ['qunfoldplotter_19',['QUnfoldPlotter',['../namespaceQUnfold_1_1plot_1_1QUnfoldPlotter.html',1,'QUnfold.plot.QUnfoldPlotter'],['../classQUnfold_1_1plot_1_1QUnfoldPlotter_1_1QUnfoldPlotter.html',1,'QUnfold.plot.QUnfoldPlotter.QUnfoldPlotter']]],
+  ['qunfoldplotter_2epy_20',['QUnfoldPlotter.py',['../QUnfoldPlotter_8py.html',1,'']]],
+  ['qunfoldqubo_21',['QUnfoldQUBO',['../namespaceQUnfold_1_1core_1_1QUnfoldQUBO.html',1,'QUnfold.core.QUnfoldQUBO'],['../classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html',1,'QUnfold.core.QUnfoldQUBO.QUnfoldQUBO']]],
+  ['qunfoldqubo_2epy_22',['QUnfoldQUBO.py',['../QUnfoldQUBO_8py.html',1,'']]],
+  ['utils_23',['utils',['../namespaceQUnfold_1_1utils.html',1,'QUnfold']]]
 ];

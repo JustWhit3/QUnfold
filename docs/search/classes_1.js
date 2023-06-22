@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['qunfold_35',['QUnfold',['../classQUnfold_1_1core_1_1QUnfold_1_1QUnfold.html',1,'QUnfold::core::QUnfold']]],
-  ['qunfoldqubo_36',['QUnfoldQUBO',['../classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html',1,'QUnfold::core::QUnfoldQUBO']]]
+  ['qunfoldplotter_31',['QUnfoldPlotter',['../classQUnfold_1_1plot_1_1QUnfoldPlotter_1_1QUnfoldPlotter.html',1,'QUnfold::plot::QUnfoldPlotter']]],
+  ['qunfoldqubo_32',['QUnfoldQUBO',['../classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html',1,'QUnfold::core::QUnfoldQUBO']]]
 ];
