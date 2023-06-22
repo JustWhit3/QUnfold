@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['beta_65',['beta',['../classQUnfold_1_1utils_1_1binary__encoder_1_1BinaryEncoder.html#a785116cf471d2499de85eca246b72dec',1,'QUnfold::utils::binary_encoder::BinaryEncoder']]]
+  ['encoding_5fbits_65',['encoding_bits',['../classQUnfold_1_1utils_1_1binary__encoder_1_1BinaryEncoder.html#adbca7bf710822dcd7fd114f33c4da6c4',1,'QUnfold::utils::binary_encoder::BinaryEncoder']]]
 ];

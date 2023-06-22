@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['encoding_5fbits_66',['encoding_bits',['../classQUnfold_1_1utils_1_1binary__encoder_1_1BinaryEncoder.html#adbca7bf710822dcd7fd114f33c4da6c4',1,'QUnfold::utils::binary_encoder::BinaryEncoder']]]
+  ['measured_5fbin_5fcontents_66',['measured_bin_contents',['../classQUnfold_1_1core_1_1QUnfold_1_1QUnfold.html#a5567c3e8747636d3bb5ef06073e996b6',1,'QUnfold::core::QUnfold::QUnfold']]],
+  ['measured_5fbin_5fedges_67',['measured_bin_edges',['../classQUnfold_1_1core_1_1QUnfold_1_1QUnfold.html#ad57d57578f820d37f8194c551f2f3b4a',1,'QUnfold::core::QUnfold::QUnfold']]]
 ];
