@@ -1,10 +1,10 @@
 var indexSectionsWithContent =
 {
-  0: "_mpqrsu",
+  0: "_mpqrs",
   1: "q",
   2: "q",
   3: "_q",
-  4: "_psu",
+  4: "_prs",
   5: "mr"
 };
 
