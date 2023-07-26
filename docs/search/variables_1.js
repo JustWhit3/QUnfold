@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['encoding_5fbits_44',['encoding_bits',['../classQUnfold_1_1utils_1_1binary__encoder_1_1BinaryEncoder.html#adbca7bf710822dcd7fd114f33c4da6c4',1,'QUnfold::utils::binary_encoder::BinaryEncoder']]]
+  ['response_37',['response',['../classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html#a82bd47d25cb4c4ce437b14b400d6ccac',1,'QUnfold.core.QUnfoldQUBO.QUnfoldQUBO.response()'],['../classQUnfold_1_1plot_1_1QUnfoldPlotter_1_1QUnfoldPlotter.html#a4885213e2614b8e91840fcda78ab276b',1,'QUnfold.plot.QUnfoldPlotter.QUnfoldPlotter.response()']]]
 ];

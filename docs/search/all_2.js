@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['binary_5fencoder_2epy_3',['binary_encoder.py',['../binary__encoder_8py.html',1,'']]],
-  ['binaryencoder_4',['BinaryEncoder',['../classQUnfold_1_1utils_1_1binary__encoder_1_1BinaryEncoder.html',1,'QUnfold::utils::binary_encoder']]]
+  ['plotmeasured_6',['plotMeasured',['../classQUnfold_1_1plot_1_1QUnfoldPlotter_1_1QUnfoldPlotter.html#a70c59b07115a022256f33cedeed3d98b',1,'QUnfold::plot::QUnfoldPlotter::QUnfoldPlotter']]],
+  ['plotresponse_7',['plotResponse',['../classQUnfold_1_1plot_1_1QUnfoldPlotter_1_1QUnfoldPlotter.html#a057c684b4ec15da84206897fc83e5615',1,'QUnfold::plot::QUnfoldPlotter::QUnfoldPlotter']]]
 ];

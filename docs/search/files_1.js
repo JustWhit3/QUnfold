@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['binary_5fencoder_2epy_34',['binary_encoder.py',['../binary__encoder_8py.html',1,'']]]
+  ['qunfoldplotter_2epy_25',['QUnfoldPlotter.py',['../QUnfoldPlotter_8py.html',1,'']]],
+  ['qunfoldqubo_2epy_26',['QUnfoldQUBO.py',['../QUnfoldQUBO_8py.html',1,'']]]
 ];
