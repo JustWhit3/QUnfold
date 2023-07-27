@@ -1,9 +1,5 @@
 var searchData=
 [
-  ['core_7',['core',['../namespaceQUnfold_1_1core.html',1,'QUnfold']]],
-  ['plot_8',['plot',['../namespaceQUnfold_1_1plot.html',1,'QUnfold']]],
-  ['qunfoldplotter_9',['QUnfoldPlotter',['../namespaceQUnfold_1_1plot_1_1QUnfoldPlotter.html',1,'QUnfold.plot.QUnfoldPlotter'],['../classQUnfold_1_1plot_1_1QUnfoldPlotter_1_1QUnfoldPlotter.html',1,'QUnfold.plot.QUnfoldPlotter.QUnfoldPlotter']]],
-  ['qunfoldplotter_2epy_10',['QUnfoldPlotter.py',['../QUnfoldPlotter_8py.html',1,'']]],
-  ['qunfoldqubo_11',['QUnfoldQUBO',['../namespaceQUnfold_1_1core_1_1QUnfoldQUBO.html',1,'QUnfold.core.QUnfoldQUBO'],['../classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html',1,'QUnfold.core.QUnfoldQUBO.QUnfoldQUBO']]],
-  ['qunfoldqubo_2epy_12',['QUnfoldQUBO.py',['../QUnfoldQUBO_8py.html',1,'']]]
+  ['plot_4',['plot',['../classQUnfold_1_1plot_1_1QUnfoldPlotter_1_1QUnfoldPlotter.html#a3dea6ff9a7f4d71519923220719f74be',1,'QUnfold::plot::QUnfoldPlotter::QUnfoldPlotter']]],
+  ['plotresponse_5',['plotResponse',['../classQUnfold_1_1plot_1_1QUnfoldPlotter_1_1QUnfoldPlotter.html#a057c684b4ec15da84206897fc83e5615',1,'QUnfold::plot::QUnfoldPlotter::QUnfoldPlotter']]]
 ];
