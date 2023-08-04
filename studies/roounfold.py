@@ -81,9 +81,13 @@ def roounfold_plot_results(true, meas, unfolded, distr, ext="png"):
         os.makedirs(f"{path}{distr}")
 
     canvas = ROOT.TCanvas()
-    true.SetLineColor(2)
     true.SetStats(0)  # hide stats box
-    unfolded.SetLineColor(3)
+    true.SetLineColor(862)  # blue
+    true.SetLineWidth(2)
+    meas.SetLineColor(807)  # orange
+    meas.SetLineWidth(2)
+    unfolded.SetLineColor(417)  # green
+    unfolded.SetLineWidth(2)
     true.SetTitle("")
     true.Draw()
     meas.Draw("same")
