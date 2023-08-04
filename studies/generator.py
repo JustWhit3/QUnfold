@@ -65,6 +65,8 @@ def generate_data(distr, samples, bins, min_bin, max_bin, bias, smear, eff):
         x = smearing(xt, bias, smear, eff)
         if x != None:
             meas.Fill(x)
+
+    for _ in range(samples * 10):
         # Fill response object
         xt = RandGen(*pars)
         x = smearing(xt, bias, smear, eff)
@@ -104,14 +106,17 @@ def gen_double_peaked(samples, bins, min_bin, max_bin, bias, smear, eff):
     parameters = distributions["double-peaked"]["parameters"]
 
     for _ in range(samples // 2):
+        # Fill true/meas histograms
         for pars in parameters:
-            # Fill true/meas histograms
             xt = RandGen(*pars)
             true.Fill(xt)
             x = smearing(xt, bias, smear, eff)
             if x != None:
                 meas.Fill(x)
-            # Fill response object
+
+    for _ in range((samples // 2) * 10):
+        # Fill response object
+        for pars in parameters:
             xt = RandGen(*pars)
             x = smearing(xt, bias, smear, eff)
             if x != None:
