@@ -7,9 +7,11 @@ from dwave.samplers import SimulatedAnnealingSampler
 
 
 class QUnfoldQUBO:
-    def __init__(self, response, meas):
+    def __init__(self, response, meas, lam=0.0, seed=None):
         self.R = response
         self.d = meas
+        self.lam = lam
+        np.random.seed(seed)
 
     @staticmethod
     def _get_laplacian(dim):
@@ -18,40 +20,40 @@ class QUnfoldQUBO:
         D = np.diag(diag) + np.diag(ones, k=1) + np.diag(ones, k=-1)
         return D
 
-    def _compute_linear(self):
-        a = -2.0 * (self.R.T @ self.d)
-        return a
+    def _define_variables(self):
+        num_vars = len(self.d)
+        num_entries = int(sum(self.d))
+        # Encode integer variables in binary
+        variables = [
+            LogEncInteger(label=f"x{i}", value_range=(0, num_entries))
+            for i in range(num_vars)
+        ]
+        return variables
 
-    def _compute_quadratic(self, G, lam):
-        B = (self.R.T @ self.R) + lam * (G.T @ G)
-        return B
-
-    def _get_pyqubo_model(self, lam):
-        bins = len(self.d)
-        n = int(sum(self.d))
-
-        # Define integer variables ane perform binary encoding
-        labels = [f"x{i}" for i in range(bins)]
-        x = [LogEncInteger(label, value_range=(0, n)) for label in labels]
-
+    def _define_hamiltonian(self, x):
         hamiltonian = 0
-        # Compute linear terms
-        a = self._compute_linear()
-        for i in range(len(x)):
+        dim = len(x)
+        # Add linear terms
+        a = -2 * (self.R.T @ self.d)
+        for i in range(dim):
             hamiltonian += a[i] * x[i]
-
-        # Compute quadratic terms
-        G = self._get_laplacian(dim=bins)
-        B = self._compute_quadratic(G, lam)
-        for i in range(len(x)):
-            for j in range(len(x)):
+        # Add quadratic terms
+        G = self._get_laplacian(dim)
+        B = (self.R.T @ self.R) + self.lam * (G.T @ G)
+        for i in range(dim):
+            for j in range(dim):
                 hamiltonian += B[i, j] * x[i] * x[j]
+        return hamiltonian
 
-        model = hamiltonian.compile()
+    def _define_pyqubo_model(self):
+        x = self._define_variables()
+        h = self._define_hamiltonian(x)
+        labels = [x[i].label for i in range(len(x))]
+        model = h.compile()
         return labels, model
 
-    def solve_simulated_annealing(self, lam=0.1, num_reads=100):
-        labels, model = self._get_pyqubo_model(lam)
+    def solve_simulated_annealing(self, num_reads=100):
+        labels, model = self._define_pyqubo_model()
         sampler = SimulatedAnnealingSampler()
         sampleset = sampler.sample(model.to_bqm(), num_reads=num_reads)
         decoded_sampleset = model.decode_sampleset(sampleset)

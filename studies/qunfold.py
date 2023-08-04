@@ -1,30 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import sys, os
+import os
 import numpy as np
 import pylab as plt
 
-sys.path.append("../src")
-from QUnfold.QUnfoldQUBO import QUnfoldQUBO
-
 path = "../results/qunfold/"
-
-
-def qunfold_unfolder(response, meas):
-    """
-    Apply QUnfold algorithm to unfold the given measured distribution.
-
-    Args:
-        response (numpy.ndarray): response matrix.
-        meas (numpy.ndarray): measured histogram.
-
-    Returns:
-        numpy.ndarray: unfolded histogram.
-    """
-    unfolder = QUnfoldQUBO(response, meas)
-    result = unfolder.solve_simulated_annealing(lam=0.1, num_reads=100)
-    return result
 
 
 def qunfold_plot_results(
@@ -56,4 +37,7 @@ def qunfold_plot_results(
     y = unfolded[1:-1] if overflow else unfolded
     ax.scatter(x, y, label="Unfolded (SA)", marker="o", s=30, c="limegreen")
     ax.legend()
-    plt.savefig(f"{path}{distr}/unfolded_SA_with_overflow.{ext}")
+    plt.savefig(f"{path}{distr}/unfolded_SA.{ext}")
+    print(
+        f"Info in <plt.savefig>: file {path}{distr}/unfolded_SA.{ext} has been created"
+    )
