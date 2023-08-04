@@ -22,7 +22,7 @@ gRandom.SetSeed(42)
 distributions = {
     "normal": {
         "generator": gRandom.Gaus,
-        "parameters": (5.0, 1.4),  # (mu, sigma)
+        "parameters": (5.3, 1.4),  # (mu, sigma)
     },
     "breit-wigner": {
         "generator": gRandom.BreitWigner,
@@ -34,16 +34,16 @@ distributions = {
     },
     "double-peaked": {
         "generator": gRandom.Gaus,
-        "parameters": ((3.4, 1.1), (6.7, 0.8)),  # ((mu1, sigma1), (mu2, sigma2))
+        "parameters": ((3.3, 0.9), (6.4, 1.2)),  # ((mu1, sigma1), (mu2, sigma2))
     },
 }
 samples = 10000
 bins = 40
 min_bin = 0.0
 max_bin = 10.0
-bias = -0.8
-smear = 0.4
-eff = 1.0
+bias = 0.9
+smear = 0.5
+eff = 0.92
 ##################################################################################
 ##################################################################################
 
@@ -73,14 +73,20 @@ def main():
         roounfold_plot_results(true, meas, unfolded_B2B, distr)
 
         ########################### Quantum ###########################
-        response = TMatrix_to_array(response.Mresponse())
-        meas = TH1_to_array(meas, overflow=False)
-        true = TH1_to_array(true, overflow=False)
+        overflow = True
+        resp = TH2_to_array(response.Hresponse(), overflow=overflow)
+
+        # response columns normalization
+        true_mc = TH1_to_array(response.Htruth(), overflow=overflow)
+        resp = (resp + 1) / (true_mc + 1)  # add 1 to avoid division by 0 error
+
+        meas = TH1_to_array(meas, overflow=overflow)
+        true = TH1_to_array(true, overflow=overflow)
 
         # Simulated Annealing unfolding (SA)
-        unfolded_SA = qunfold_unfolder(response, meas, true)
+        unfolded_SA = qunfold_unfolder(resp, meas)
         binning = np.linspace(min_bin, max_bin, bins + 1)
-        qunfold_plot_results(true, meas, unfolded_SA, distr, binning)
+        qunfold_plot_results(true, meas, unfolded_SA, distr, binning, overflow=overflow)
 
 
 if __name__ == "__main__":
