@@ -7,11 +7,10 @@ from dwave.samplers import SimulatedAnnealingSampler
 
 
 class QUnfoldQUBO:
-    def __init__(self, response, meas, lam=0.0, seed=None):
+    def __init__(self, response, meas, lam=0.0):
         self.R = response
         self.d = meas
         self.lam = lam
-        np.random.seed(seed)
 
     @staticmethod
     def _get_laplacian(dim):
@@ -52,10 +51,10 @@ class QUnfoldQUBO:
         model = h.compile()
         return labels, model
 
-    def solve_simulated_annealing(self, num_reads=100):
+    def solve_simulated_annealing(self, num_reads=100, seed=None):
         labels, model = self._define_pyqubo_model()
         sampler = SimulatedAnnealingSampler()
-        sampleset = sampler.sample(model.to_bqm(), num_reads=num_reads)
+        sampleset = sampler.sample(model.to_bqm(), num_reads=num_reads, seed=seed)
         decoded_sampleset = model.decode_sampleset(sampleset)
         best_sample = min(decoded_sampleset, key=lambda s: s.energy)
         return np.array([best_sample.subh[label] for label in labels])

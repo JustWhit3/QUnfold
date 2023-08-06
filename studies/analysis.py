@@ -84,8 +84,8 @@ def main():
         true = TH1_to_array(true)
 
         # Simulated Annealing unfolding (SA)
-        unfolder = QUnfoldQUBO(resp, meas, lam=0.1, seed=seed)
-        unfolded_SA = unfolder.solve_simulated_annealing(num_reads=100)
+        unfolder = QUnfoldQUBO(resp, meas, lam=0.1)
+        unfolded_SA = unfolder.solve_simulated_annealing(num_reads=100, seed=seed)
 
         binning = np.linspace(min_bin, max_bin, bins + 1)
         qunfold_plot_results(true, meas, unfolded_SA, distr, binning)
