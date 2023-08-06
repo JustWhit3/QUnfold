@@ -20,14 +20,11 @@ class QUnfoldQUBO:
         return D
 
     def _define_variables(self):
-        num_vars = len(self.d)
-        num_entries = int(sum(self.d))
-        # Encode integer variables in binary
-        variables = [
-            LogEncInteger(label=f"x{i}", value_range=(0, num_entries))
-            for i in range(num_vars)
-        ]
-        return variables
+        # Get largest power of 2 integer below the total number of entries
+        n = int(2 ** np.floor(np.log2(sum(self.d))))
+        # Encode integer variables using logarithmic binary encoding
+        vars = [LogEncInteger(f"x{i}", value_range=(0, n)) for i in range(len(self.d))]
+        return vars
 
     def _define_hamiltonian(self, x):
         hamiltonian = 0
