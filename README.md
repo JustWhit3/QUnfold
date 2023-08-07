@@ -29,24 +29,6 @@ pip install -r requirements.txt
 > :warning: remember to activate the `conda` environment every time you open a new shell.
 
 
-### Install HEP dependencies
-To run all the studies you need to install some HEP dependencies:
-
-- [`ROOT`](https://root.cern/releases/release-62804/): **v6.28/04**.
-- [`RooUnfold`](https://gitlab.cern.ch/RooUnfold/RooUnfold): **v3.0.0**.
-
-These dependencies can be easily downloaded and installed in the `HEP_deps` directory of the repository by running the related scripts (they work on Ubuntu only):
-
-```shell
-./scripts/fetchROOT.sh
-source HEP_deps/root/bin/thisroot.sh
-
-./scripts/fetchRooUnfold.sh
-```
-
-> :warning: remember to source the `ROOT` framework every time you open a new shell.
-
-
 ### Launch analysis
 To launch the full analysis you can simply run the related Python script in the `studies` directory. All the output plots will be saved into the `results` directory of the repository.
 
@@ -57,16 +39,9 @@ python analysis.py
 
 Pseudo-data will be generated following common distributions (normal, breit-wigner, exponential, double-peaked).
 
-Distributions will be unfolded using `RooUnfold` by the following classical methods:
-
-- Response Matrix Inversion (RMI)
-- Iterative Bayesian Unfolding (IBU), with 4 iterations
-- SVD Tikhonov unfolding (SVD), with K=2
-- Bin-by-Bin unfolding (B2B)
-
 Distributions will be unfolded using `QUnfold` by the following methods:
 
-- Simulated annealing unfolding (lambda=0.1, num_reads=100)
+- Simulated annealing unfolding (lambda=0.04, num_reads=100)
 
 
 ## Credits
