@@ -26,7 +26,7 @@ def qunfold_plot_results(
     if not os.path.exists(f"{path}{distr}"):
         os.makedirs(f"{path}{distr}")
 
-    _, ax = plt.subplots(figsize=(9, 6))
+    _, ax = plt.subplots()
     for histo, label in [(true, "True"), (meas, "Meas")]:
         y = histo[1:-1] if overflow else histo
         steps = np.append(y, [y[-1]])
@@ -35,7 +35,7 @@ def qunfold_plot_results(
     binwidth = binning[1] - binning[0]
     x = binning[:-1] + (binwidth / 2)
     y = unfolded[1:-1] if overflow else unfolded
-    ax.scatter(x, y, label="Unfolded (SA)", marker="o", s=30, c="limegreen")
+    ax.scatter(x, y, label="Unfolded (SA)", marker="o", s=30, c="black")
     ax.legend()
     plt.savefig(f"{path}{distr}/unfolded_SA.{ext}")
     print(

@@ -28,28 +28,24 @@ gRandom.SetSeed(seed)
 distributions = {
     "normal": {
         "generator": gRandom.Gaus,
-        "parameters": (5.3, 1.4),  # (mu, sigma)
+        "parameters": (4.9, 1.3),  # (mu, sigma)
     },
     "breit-wigner": {
         "generator": gRandom.BreitWigner,
-        "parameters": (5.3, 2.1),  # (mu, gamma)
-    },
-    "exponential": {
-        "generator": gRandom.Exp,
-        "parameters": (2.5,),  # (tau,)
+        "parameters": (4.7, 1.7),  # (mu, gamma)
     },
     "double-peaked": {
         "generator": gRandom.Gaus,
-        "parameters": ((3.3, 0.9), (6.4, 1.2)),  # ((mu1, sigma1), (mu2, sigma2))
+        "parameters": ((3.5, 1.0), (6.2, 0.8)),  # ((mu1, sigma1), (mu2, sigma2))
     },
 }
 samples = 10000
-bins = 40
+bins = 30
 min_bin = 0.0
 max_bin = 10.0
-bias = 0.9
+bias = 0.8
 smear = 0.5
-eff = 0.92
+eff = 0.9
 ##################################################################################
 ##################################################################################
 
@@ -62,10 +58,6 @@ def main():
         roounfold_plot_response(response, distr)
 
         ########################## Classical ##########################
-        # Response Matrix Inversion (RMI)
-        unfolded_RMI = roounfold_unfolder(response, meas, method="RMI")
-        roounfold_plot_results(true, meas, unfolded_RMI, distr)
-
         # Iterative Bayesian Unfolding (IBU)
         unfolded_IBU = roounfold_unfolder(response, meas, method="IBU")
         roounfold_plot_results(true, meas, unfolded_IBU, distr)
@@ -84,7 +76,7 @@ def main():
         true = TH1_to_array(true)
 
         # Simulated Annealing unfolding (SA)
-        unfolder = QUnfoldQUBO(resp, meas, lam=0.1)
+        unfolder = QUnfoldQUBO(resp, meas, lam=0.04)
         unfolded_SA = unfolder.solve_simulated_annealing(num_reads=100, seed=seed)
 
         binning = np.linspace(min_bin, max_bin, bins + 1)

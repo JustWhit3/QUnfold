@@ -86,7 +86,7 @@ def roounfold_plot_results(true, meas, unfolded, distr, ext="png"):
     true.SetLineWidth(2)
     meas.SetLineColor(807)  # orange
     meas.SetLineWidth(2)
-    unfolded.SetLineColor(417)  # green
+    unfolded.SetLineColor(1)  # black
     unfolded.SetLineWidth(2)
     true.SetTitle("")
     true.Draw()
