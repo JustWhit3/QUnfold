@@ -18,11 +18,9 @@ def smearing(xt, bias, smear, eff):
         float: smeared output value.
         None: if the sample is filtered out because of limited efficiency.
     """
-    from analysis import gRandom
-
-    if gRandom.Rndm() > eff:
+    if ROOT.gRandom.Rndm() > eff:
         return None
-    return xt + gRandom.Gaus(bias, smear)
+    return xt + ROOT.gRandom.Gaus(bias, smear)
 
 
 def generate_data(distr, samples, bins, min_bin, max_bin, bias, smear, eff):
@@ -66,7 +64,7 @@ def generate_data(distr, samples, bins, min_bin, max_bin, bias, smear, eff):
         if x != None:
             meas.Fill(x)
 
-    for _ in range(samples * 10):
+    for _ in range(samples * 100):
         # Fill response object
         xt = RandGen(*pars)
         x = smearing(xt, bias, smear, eff)
@@ -114,7 +112,7 @@ def gen_double_peaked(samples, bins, min_bin, max_bin, bias, smear, eff):
             if x != None:
                 meas.Fill(x)
 
-    for _ in range((samples // 2) * 10):
+    for _ in range((samples // 2) * 100):
         # Fill response object
         for pars in parameters:
             xt = RandGen(*pars)

@@ -22,6 +22,24 @@ def TH1_to_array(histo, overflow=False):
     return np.array([histo.GetBinContent(i) for i in range(start, stop)])
 
 
+def TH1_to_error(histo, overflow=False):
+    """
+    Get ROOT.TH1F bin errors and convert into a numpy.array.
+
+    Args:
+        histo (ROOT.TH1F): input TH1F object.
+        overflow (bool): enable/disable first and last bins overflow.
+
+    Returns:
+        numpy.array: array representing the bin errors of the TH1F.
+    """
+    if overflow:
+        start, stop = 0, histo.GetNbinsX() + 2
+    else:
+        start, stop = 1, histo.GetNbinsX() + 1
+    return np.array([histo.GetBinError(i) for i in range(start, stop)])
+
+
 def TH2_to_array(histo, overflow=False):
     """
     Convert a ROOT.TH2F object into a numpy.array.

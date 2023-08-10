@@ -7,6 +7,7 @@ import numpy as np
 from generator import *
 from roounfold import *
 from qunfold import *
+from comparison import *
 from root_converter import *
 
 import sys
@@ -14,33 +15,35 @@ import sys
 sys.path.append("../src")
 from QUnfold.QUnfoldQUBO import QUnfoldQUBO
 
-
 # Load RooUnfold library from local installation
 ROOT.gSystem.Load("../HEP_deps/RooUnfold/libRooUnfold.so")
-
-# Get ROOT random generator and set random seed
-seed = 42
-gRandom = ROOT.gRandom
-gRandom.SetSeed(seed)
 
 ############################## CONFIG INPUT VARIABLES ############################
 ##################################################################################
 distributions = {
     "normal": {
-        "generator": gRandom.Gaus,
+        "generator": ROOT.gRandom.Gaus,
         "parameters": (4.9, 1.3),  # (mu, sigma)
+        "lambda": 0.18,  # naivly optimized for 15 bins
     },
     "breit-wigner": {
-        "generator": gRandom.BreitWigner,
-        "parameters": (4.7, 1.7),  # (mu, gamma)
+        "generator": ROOT.gRandom.BreitWigner,
+        "parameters": (4.9, 1.5),  # (mu, gamma)
+        "lambda": 0.039,  # naivly optimized for 15 bins
     },
     "double-peaked": {
-        "generator": gRandom.Gaus,
+        "generator": ROOT.gRandom.Gaus,
         "parameters": ((3.5, 1.0), (6.2, 0.8)),  # ((mu1, sigma1), (mu2, sigma2))
+        "lambda": 0.022,  # naivly optimized for 15 bins
+    },
+    "exponential": {
+        "generator": ROOT.gRandom.Exp,
+        "parameters": (2.3,),  # (tau)
+        "lambda": 0.0027,  # naivly optimized for 15 bins
     },
 }
-samples = 10000
-bins = 30
+samples = 4000
+bins = 15
 min_bin = 0.0
 max_bin = 10.0
 bias = 0.8
@@ -74,13 +77,30 @@ def main():
         resp = TMatrix_to_array(response.Mresponse(norm=True))
         meas = TH1_to_array(meas)
         true = TH1_to_array(true)
-
-        # Simulated Annealing unfolding (SA)
-        unfolder = QUnfoldQUBO(resp, meas, lam=0.04)
-        unfolded_SA = unfolder.solve_simulated_annealing(num_reads=100, seed=seed)
-
         binning = np.linspace(min_bin, max_bin, bins + 1)
-        qunfold_plot_results(true, meas, unfolded_SA, distr, binning)
+
+        # Simulated annealing unfolding
+        unfolder = QUnfoldQUBO(resp, meas, lam=distributions[distr]["lambda"])
+        unfolded_QUBO, error_QUBO = unfolder.solve_simulated_annealing(num_reads=20)
+        qunfold_plot_results(true, meas, unfolded_QUBO, error_QUBO, distr, binning)
+        ###############################################################
+
+        data = {
+            "IBU": {
+                "unfolded": TH1_to_array(unfolded_IBU),
+                "error": TH1_to_error(unfolded_IBU),
+            },
+            "SVD": {
+                "unfolded": TH1_to_array(unfolded_SVD),
+                "error": TH1_to_error(unfolded_SVD),
+            },
+            "B2B": {
+                "unfolded": TH1_to_array(unfolded_B2B),
+                "error": TH1_to_error(unfolded_B2B),
+            },
+            "QUBO": {"unfolded": unfolded_QUBO, "error": error_QUBO},
+        }
+        plot_comparison(true, data, distr, binning)
 
 
 if __name__ == "__main__":

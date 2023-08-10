@@ -21,7 +21,7 @@ class QUnfoldQUBO:
 
     def _define_variables(self):
         # Get largest power of 2 integer below the total number of entries
-        n = int(2 ** np.floor(np.log2(sum(self.d))))
+        n = int(2 ** np.floor(np.log2(sum(self.d)))) - 1
         # Encode integer variables using logarithmic binary encoding
         vars = [LogEncInteger(f"x{i}", value_range=(0, n)) for i in range(len(self.d))]
         return vars
@@ -48,10 +48,15 @@ class QUnfoldQUBO:
         model = h.compile()
         return labels, model
 
-    def solve_simulated_annealing(self, num_reads=100, seed=None):
+    def solve_simulated_annealing(self, num_reads=10, seed=None):
         labels, model = self._define_pyqubo_model()
         sampler = SimulatedAnnealingSampler()
-        sampleset = sampler.sample(model.to_bqm(), num_reads=num_reads, seed=seed)
-        decoded_sampleset = model.decode_sampleset(sampleset)
-        best_sample = min(decoded_sampleset, key=lambda s: s.energy)
-        return np.array([best_sample.subh[label] for label in labels])
+        samples = model.decode_sampleset(
+            sampler.sample(model.to_bqm(), num_reads=num_reads, seed=seed)
+        )
+        solutions = np.array(
+            [[sample.subh[label] for label in labels] for sample in samples]
+        )
+        solution = np.mean(solutions, axis=0)
+        error = np.sqrt(np.var(solutions, axis=0) / num_reads)
+        return solution, error

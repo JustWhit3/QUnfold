@@ -4,12 +4,13 @@
 import os
 import numpy as np
 import pylab as plt
+import seaborn as sns
 
 path = "../results/qunfold/"
 
 
 def qunfold_plot_results(
-    true, meas, unfolded, distr, binning, overflow=False, ext="png"
+    true, meas, unfolded, error, distr, binning, overflow=False, ext="png"
 ):
     """
     Save quantum unfolding results plot to local filesystem.
@@ -23,10 +24,12 @@ def qunfold_plot_results(
         overflow (bool): enable/disable first and last bins overflow.
         ext (str): output file extension (png, pdf)
     """
+    sns.set()
+
     if not os.path.exists(f"{path}{distr}"):
         os.makedirs(f"{path}{distr}")
 
-    _, ax = plt.subplots()
+    _, ax = plt.subplots(figsize=(9, 6))
     for histo, label in [(true, "True"), (meas, "Meas")]:
         y = histo[1:-1] if overflow else histo
         steps = np.append(y, [y[-1]])
@@ -35,9 +38,19 @@ def qunfold_plot_results(
     binwidth = binning[1] - binning[0]
     x = binning[:-1] + (binwidth / 2)
     y = unfolded[1:-1] if overflow else unfolded
-    ax.scatter(x, y, label="Unfolded (SA)", marker="o", s=30, c="black")
+    yerr = error[1:-1] if overflow else error
+    ax.errorbar(
+        x,
+        y,
+        yerr=yerr,
+        label="Unfolded QUBO",
+        marker="o",
+        ms=5,
+        color="black",
+        linestyle="None",
+    )
     ax.legend()
-    plt.savefig(f"{path}{distr}/unfolded_SA.{ext}")
+    plt.savefig(f"{path}{distr}/unfolded_QUBO.{ext}")
     print(
-        f"Info in <plt.savefig>: file {path}{distr}/unfolded_SA.{ext} has been created"
+        f"Info in <plt.savefig>: file {path}{distr}/unfolded_QUBO.{ext} has been created"
     )

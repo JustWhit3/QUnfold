@@ -97,7 +97,7 @@ def roounfold_plot_results(true, meas, unfolded, distr, ext="png"):
     legend.AddEntry(true, "True", "pl")
     legend.AddEntry(meas, "Meas", "pl")
     label = unfolded.GetName()
-    legend.AddEntry(unfolded, f"Unfolded ({label})")
+    legend.AddEntry(unfolded, f"Unfolded {label}")
     legend.Draw()
 
     canvas.Draw()
