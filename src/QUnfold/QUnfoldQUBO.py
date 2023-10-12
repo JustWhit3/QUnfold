@@ -4,6 +4,7 @@
 import numpy as np
 from pyqubo import LogEncInteger
 from dwave.samplers import SimulatedAnnealingSampler
+from dwave.system import LeapHybridSampler
 
 
 class QUnfoldQUBO:
@@ -52,6 +53,14 @@ class QUnfoldQUBO:
         labels, model = self._define_pyqubo_model()
         sampler = SimulatedAnnealingSampler()
         sampleset = sampler.sample(model.to_bqm(), num_reads=num_reads, seed=seed)
+        decoded_sampleset = model.decode_sampleset(sampleset)
+        best_sample = min(decoded_sampleset, key=lambda s: s.energy)
+        return np.array([best_sample.subh[label] for label in labels])
+
+    def solve_hybrid_sampler(self):
+        labels, model = self._define_pyqubo_model()
+        sampler = LeapHybridSampler()
+        sampleset = sampler.sample(model.to_bqm())
         decoded_sampleset = model.decode_sampleset(sampleset)
         best_sample = min(decoded_sampleset, key=lambda s: s.energy)
         return np.array([best_sample.subh[label] for label in labels])
