@@ -107,7 +107,7 @@ def generate_data(distr, num_samples, num_bins, min_bin, max_bin, bias, smear, e
         numpy.ndarray: measured distribution array.
         numpy.ndarray: response matrix.
     """
-    from analysis import distributions, overflow, num_left_bins, num_right_bins
+    from analysis import distributions
 
     generators = {
         "normal": _normal,
@@ -120,15 +120,9 @@ def generate_data(distr, num_samples, num_bins, min_bin, max_bin, bias, smear, e
     generator = generators[distr]
     parameters = distributions[distr]["parameters"]
 
-    # Setup histograms binning for edges overflow
-    binning = np.linspace(min_bin, max_bin, num_bins + 1)
-    if overflow:
-        binwidth = (max_bin - min_bin) / num_bins
-        lower = [min_bin - (i * binwidth) for i in range(num_left_bins, 0, -1)]
-        higher = [max_bin + (i * binwidth) for i in range(1, num_right_bins + 1)]
-        bins = lower + binning.tolist() + higher
-    else:
-        bins = binning
+    # Set histograms binning with overflow bins
+    bins = np.linspace(min_bin, max_bin, num_bins + 1)
+    bins = np.array([-np.inf] + bins.tolist() + [np.inf])
 
     # Generate true and meas histograms
     true_data = generator(*parameters, size=num_samples)
