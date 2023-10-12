@@ -21,7 +21,7 @@ class QUnfoldQUBO:
 
     def _define_variables(self):
         # Get largest power of 2 integer below the total number of entries
-        n = int(2 ** np.floor(np.log2(sum(self.d))))
+        n = int(2 ** np.floor(np.log2(sum(self.d)))) - 1
         # Encode integer variables using logarithmic binary encoding
         vars = [LogEncInteger(f"x{i}", value_range=(0, n)) for i in range(len(self.d))]
         return vars
