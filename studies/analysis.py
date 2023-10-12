@@ -35,13 +35,9 @@ samples = 10000
 bins = 40
 min_bin = 0.0
 max_bin = 10.0
-bias = 0.9
+bias = -1.7
 smear = 0.5
 eff = 0.92
-
-overflow = True
-num_left_bins = 5
-num_right_bins = 6
 ##################################################################################
 ##################################################################################
 
@@ -52,7 +48,7 @@ def main():
             distr, samples, bins, min_bin, max_bin, bias, smear, eff
         )
 
-        unfolder = QUnfoldQUBO(resp, meas, lam=0.04)
+        unfolder = QUnfoldQUBO(resp, meas, lam=0.3)
         unfolded_SA = unfolder.solve_simulated_annealing(num_reads=100, seed=seed)
 
         binning = np.linspace(min_bin, max_bin, bins + 1)
