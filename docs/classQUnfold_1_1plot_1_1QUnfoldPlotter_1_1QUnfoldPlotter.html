@@ -80,9 +80,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad4485acdbc28d2ba3239951b971a810c"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQUnfold_1_1plot_1_1QUnfoldPlotter_1_1QUnfoldPlotter.html#ad4485acdbc28d2ba3239951b971a810c">__init__</a> (self, unfolder, <a class="el" href="classQUnfold_1_1plot_1_1QUnfoldPlotter_1_1QUnfoldPlotter.html#ae74a35c799a677423fe3c20a85a755bd">truth</a>, <a class="el" href="classQUnfold_1_1plot_1_1QUnfoldPlotter_1_1QUnfoldPlotter.html#a82e2aca8cf8689c229975cde09540872">binning</a>)</td></tr>
-<tr class="memdesc:ad4485acdbc28d2ba3239951b971a810c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classQUnfold_1_1plot_1_1QUnfoldPlotter_1_1QUnfoldPlotter.html" title="Class used to plot QUnfold data and results.">QUnfoldPlotter</a> class from the unfolder type of QUnfold.  <a href="classQUnfold_1_1plot_1_1QUnfoldPlotter_1_1QUnfoldPlotter.html#ad4485acdbc28d2ba3239951b971a810c">More...</a><br /></td></tr>
-<tr class="separator:ad4485acdbc28d2ba3239951b971a810c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2aaec96e2ee904394bebcf11dde6e2d"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQUnfold_1_1plot_1_1QUnfoldPlotter_1_1QUnfoldPlotter.html#ad2aaec96e2ee904394bebcf11dde6e2d">__init__</a> (self, <a class="el" href="classQUnfold_1_1plot_1_1QUnfoldPlotter_1_1QUnfoldPlotter.html#a4885213e2614b8e91840fcda78ab276b">response</a>, <a class="el" href="classQUnfold_1_1plot_1_1QUnfoldPlotter_1_1QUnfoldPlotter.html#a9807f7bf3a7f725f869d05aa20fa1ce7">measured</a>, <a class="el" href="classQUnfold_1_1plot_1_1QUnfoldPlotter_1_1QUnfoldPlotter.html#ae74a35c799a677423fe3c20a85a755bd">truth</a>, <a class="el" href="classQUnfold_1_1plot_1_1QUnfoldPlotter_1_1QUnfoldPlotter.html#ad7fa7406143af2128b370c96a954bb76">unfolded</a>, <a class="el" href="classQUnfold_1_1plot_1_1QUnfoldPlotter_1_1QUnfoldPlotter.html#a82e2aca8cf8689c229975cde09540872">binning</a>)</td></tr>
+<tr class="memdesc:ad2aaec96e2ee904394bebcf11dde6e2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classQUnfold_1_1plot_1_1QUnfoldPlotter_1_1QUnfoldPlotter.html" title="Class used to plot QUnfold data and results.">QUnfoldPlotter</a> class for visualizing unfolding results.  <a href="classQUnfold_1_1plot_1_1QUnfoldPlotter_1_1QUnfoldPlotter.html#ad2aaec96e2ee904394bebcf11dde6e2d">More...</a><br /></td></tr>
+<tr class="separator:ad2aaec96e2ee904394bebcf11dde6e2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a057c684b4ec15da84206897fc83e5615"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQUnfold_1_1plot_1_1QUnfoldPlotter_1_1QUnfoldPlotter.html#a057c684b4ec15da84206897fc83e5615">plotResponse</a> (self)</td></tr>
 <tr class="memdesc:a057c684b4ec15da84206897fc83e5615"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plot the response matrix with matplotlib style.  <a href="classQUnfold_1_1plot_1_1QUnfoldPlotter_1_1QUnfoldPlotter.html#a057c684b4ec15da84206897fc83e5615">More...</a><br /></td></tr>
 <tr class="separator:a057c684b4ec15da84206897fc83e5615"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -112,8 +112,8 @@ Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class used to plot QUnfold data and results. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ad4485acdbc28d2ba3239951b971a810c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4485acdbc28d2ba3239951b971a810c">&#9670;&nbsp;</a></span>__init__()</h2>
+<a id="ad2aaec96e2ee904394bebcf11dde6e2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2aaec96e2ee904394bebcf11dde6e2d">&#9670;&nbsp;</a></span>__init__()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -128,13 +128,25 @@ Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>unfolder</em>, </td>
+          <td class="paramname"><em>response</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>measured</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>truth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>unfolded</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -150,12 +162,14 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Construct a <a class="el" href="classQUnfold_1_1plot_1_1QUnfoldPlotter_1_1QUnfoldPlotter.html" title="Class used to plot QUnfold data and results.">QUnfoldPlotter</a> class from the unfolder type of QUnfold. </p>
+<p>Constructs a <a class="el" href="classQUnfold_1_1plot_1_1QUnfoldPlotter_1_1QUnfoldPlotter.html" title="Class used to plot QUnfold data and results.">QUnfoldPlotter</a> class for visualizing unfolding results. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">unfolder</td><td>the used unfolder. </td></tr>
-    <tr><td class="paramname">truth</td><td>the true distribution. </td></tr>
-    <tr><td class="paramname">binning</td><td>the binning of the histograms. </td></tr>
+    <tr><td class="paramname">response</td><td>The response matrix used in the unfolding process. </td></tr>
+    <tr><td class="paramname">measured</td><td>The measured (observed) data distribution. </td></tr>
+    <tr><td class="paramname">truth</td><td>The true distribution. </td></tr>
+    <tr><td class="paramname">unfolded</td><td>The unfolded distribution. </td></tr>
+    <tr><td class="paramname">binning</td><td>The binning information for the histograms. </td></tr>
   </table>
   </dd>
 </dl>

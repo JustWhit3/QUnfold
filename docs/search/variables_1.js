@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['measured_34',['measured',['../classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html#a4430a5fbeb9b456b992512ca20345f10',1,'QUnfold.core.QUnfoldQUBO.QUnfoldQUBO.measured()'],['../classQUnfold_1_1plot_1_1QUnfoldPlotter_1_1QUnfoldPlotter.html#a9807f7bf3a7f725f869d05aa20fa1ce7',1,'QUnfold.plot.QUnfoldPlotter.QUnfoldPlotter.measured()']]]
+  ['d_39',['d',['../classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html#acce8b71e27b321a5081a9cd0fd5c4a90',1,'QUnfold::core::QUnfoldQUBO::QUnfoldQUBO']]]
 ];

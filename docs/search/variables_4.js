@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['unfolded_37',['unfolded',['../classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html#adbd0295ff8e5d56eaa3a820c4700b132',1,'QUnfold.core.QUnfoldQUBO.QUnfoldQUBO.unfolded()'],['../classQUnfold_1_1plot_1_1QUnfoldPlotter_1_1QUnfoldPlotter.html#ad7fa7406143af2128b370c96a954bb76',1,'QUnfold.plot.QUnfoldPlotter.QUnfoldPlotter.unfolded()']]]
+  ['r_42',['R',['../classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html#a1b78a88de279948727162a8ae915c82c',1,'QUnfold::core::QUnfoldQUBO::QUnfoldQUBO']]],
+  ['response_43',['response',['../classQUnfold_1_1plot_1_1QUnfoldPlotter_1_1QUnfoldPlotter.html#a4885213e2614b8e91840fcda78ab276b',1,'QUnfold::plot::QUnfoldPlotter::QUnfoldPlotter']]]
 ];
