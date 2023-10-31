@@ -74,14 +74,20 @@ $(function() {
 <div class="title">QUnfold.core.QUnfoldQUBO.QUnfoldQUBO Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Class used to perform the unfolding using QUBO problems solution.  
+ <a href="classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a5ab90c575aa9bb1df4cc0b1aa40d39d8"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html#a5ab90c575aa9bb1df4cc0b1aa40d39d8">__init__</a> (self, response, meas, <a class="el" href="classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html#a3091dd29f0f7ae7c0ec61548576a2041">lam</a>=0.0)</td></tr>
+<tr class="memdesc:a5ab90c575aa9bb1df4cc0b1aa40d39d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the <a class="el" href="classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html" title="Class used to perform the unfolding using QUBO problems solution.">QUnfoldQUBO</a> object.  <a href="classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html#a5ab90c575aa9bb1df4cc0b1aa40d39d8">More...</a><br /></td></tr>
 <tr class="separator:a5ab90c575aa9bb1df4cc0b1aa40d39d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18b52e5eab13161e3ef52c3775d1c9e7"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html#a18b52e5eab13161e3ef52c3775d1c9e7">solve_simulated_annealing</a> (self, num_reads=100, seed=None)</td></tr>
+<tr class="memdesc:a18b52e5eab13161e3ef52c3775d1c9e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solve the QUBO problem using the Simulated Annealing sampler.  <a href="classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html#a18b52e5eab13161e3ef52c3775d1c9e7">More...</a><br /></td></tr>
 <tr class="separator:a18b52e5eab13161e3ef52c3775d1c9e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40f2710d8ed18d0aad874ac8edf11a3e"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html#a40f2710d8ed18d0aad874ac8edf11a3e">solve_hybrid_sampler</a> (self)</td></tr>
+<tr class="memdesc:a40f2710d8ed18d0aad874ac8edf11a3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solve the QUBO problem using the Leap Hybrid sampler.  <a href="classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html#a40f2710d8ed18d0aad874ac8edf11a3e">More...</a><br /></td></tr>
 <tr class="separator:a40f2710d8ed18d0aad874ac8edf11a3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -93,7 +99,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a3091dd29f0f7ae7c0ec61548576a2041"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html#a3091dd29f0f7ae7c0ec61548576a2041">lam</a></td></tr>
 <tr class="separator:a3091dd29f0f7ae7c0ec61548576a2041"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Class used to perform the unfolding using QUBO problems solution. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a5ab90c575aa9bb1df4cc0b1aa40d39d8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5ab90c575aa9bb1df4cc0b1aa40d39d8">&#9670;&nbsp;</a></span>__init__()</h2>
 
@@ -132,6 +140,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Initialize the <a class="el" href="classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html" title="Class used to perform the unfolding using QUBO problems solution.">QUnfoldQUBO</a> object. </p>
+<dl class="section user"><dt>Parameters</dt><dd>response The response matrix. meas The measured distribution. lam (float, optional): The regularization parameter (default is 0.0). </dd></dl>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -150,6 +161,11 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Solve the QUBO problem using the Leap Hybrid sampler. </p>
+<dl class="section return"><dt>Returns</dt><dd></dd>
+<dd>
+numpy Array of solutions. </dd></dl>
 
 </div>
 </div>
@@ -184,6 +200,12 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Solve the QUBO problem using the Simulated Annealing sampler. </p>
+<dl class="section user"><dt>Parameters</dt><dd>num_reads (int, optional): Number of reads for the sampler (default is 100). seed (int, optional): Seed for random number generation (default is None).</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd></dd>
+<dd>
+numpy Array of solutions. </dd></dl>
 
 </div>
 </div>
