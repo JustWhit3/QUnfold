@@ -15,10 +15,22 @@ class QUnfoldQUBO:
 
     @staticmethod
     def _get_laplacian(dim):
-        diag = np.ones(dim) * -2
-        ones = np.ones(dim - 1)
-        D = np.diag(diag) + np.diag(ones, k=1) + np.diag(ones, k=-1)
+        diag = np.full(dim, fill_value=-2)
+        D = np.diag(diag).astype(float)
+        diag1 = np.ones(dim - 1)
+        D += np.diag(diag1, k=1) + np.diag(diag1, k=-1)
         return D
+
+    @staticmethod
+    def _get_cowan_matrix(dim):
+        # Ref: Glen Cowan, "Statistical Data Analysis", formula (11.48)
+        diag = np.array([1, 5] + [6] * (dim - 4) + [5, 1])
+        G = np.diag(diag).astype(float)
+        diag1 = np.array([-2] + [-4] * (dim - 3) + [-2])
+        G += np.diag(diag1, k=1) + np.diag(diag1, k=-1)
+        diag2 = np.ones(dim - 2)
+        G += np.diag(diag2, k=2) + np.diag(diag2, k=-2)
+        return G
 
     def _define_variables(self):
         # Get largest power of 2 integer below the total number of entries
