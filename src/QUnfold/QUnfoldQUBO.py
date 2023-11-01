@@ -76,3 +76,13 @@ class QUnfoldQUBO:
         decoded_sampleset = model.decode_sampleset(sampleset)
         best_sample = min(decoded_sampleset, key=lambda s: s.energy)
         return np.array([best_sample.subh[label] for label in labels])
+
+    def compute_energy(self, x):
+        num_bits = int(np.floor(np.log2(sum(self.d))))
+        x_binary = {}
+        for i, entry in enumerate(x):
+            bitstr = np.binary_repr(int(entry), width=num_bits)
+            for j, bit in enumerate(bitstr[::-1]):
+                x_binary[f"x{i}[{j}]"] = int(bit)
+        _, model = self._define_pyqubo_model()
+        return model.to_bqm().energy(x_binary)
