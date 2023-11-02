@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['unfold_28',['unfold',['../classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html#aae9aed174a177982f35f979e004f1271',1,'QUnfold::core::QUnfoldQUBO::QUnfoldQUBO']]]
+  ['unfolded_29',['unfolded',['../classQUnfold_1_1plot_1_1QUnfoldPlotter_1_1QUnfoldPlotter.html#ad7fa7406143af2128b370c96a954bb76',1,'QUnfold::plot::QUnfoldPlotter::QUnfoldPlotter']]]
 ];

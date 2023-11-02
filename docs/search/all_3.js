@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['lam_4',['lam',['../classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html#a3091dd29f0f7ae7c0ec61548576a2041',1,'QUnfold::core::QUnfoldQUBO::QUnfoldQUBO']]]
+  ['fromroot_2epy_4',['FromROOT.py',['../FromROOT_8py.html',1,'']]]
 ];

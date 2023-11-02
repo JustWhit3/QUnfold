@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['savemeasuredplot_30',['saveMeasuredPlot',['../classQUnfold_1_1plot_1_1QUnfoldPlotter_1_1QUnfoldPlotter.html#aa390a3f031b659b9d6e39f1f3606b7ff',1,'QUnfold::plot::QUnfoldPlotter::QUnfoldPlotter']]],
-  ['saveresponseplot_31',['saveResponsePlot',['../classQUnfold_1_1plot_1_1QUnfoldPlotter_1_1QUnfoldPlotter.html#a9b88d510e24fd36a47a6a076546c0bde',1,'QUnfold::plot::QUnfoldPlotter::QUnfoldPlotter']]]
+  ['th1_5fto_5farray_49',['TH1_to_array',['../namespaceQUnfold_1_1utility_1_1FromROOT.html#ab06091b2c3e890084447dc5ac845fccc',1,'QUnfold::utility::FromROOT']]],
+  ['th2_5fto_5farray_50',['TH2_to_array',['../namespaceQUnfold_1_1utility_1_1FromROOT.html#aba3ba520adc8577c681a6806568aa4f6',1,'QUnfold::utility::FromROOT']]],
+  ['tmatrix_5fto_5farray_51',['TMatrix_to_array',['../namespaceQUnfold_1_1utility_1_1FromROOT.html#a06c88ca85b6b93d28c5bbe5ea58bf717',1,'QUnfold::utility::FromROOT']]],
+  ['tvector_5fto_5farray_52',['TVector_to_array',['../namespaceQUnfold_1_1utility_1_1FromROOT.html#ac0af575d37aee98712ca6bbb4ddf738a',1,'QUnfold::utility::FromROOT']]]
 ];

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['r_43',['R',['../classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html#a1b78a88de279948727162a8ae915c82c',1,'QUnfold::core::QUnfoldQUBO::QUnfoldQUBO']]],
-  ['reg_44',['reg',['../classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html#afcb3fec62b79d7c2441dbc9d3f2f73ab',1,'QUnfold::core::QUnfoldQUBO::QUnfoldQUBO']]],
-  ['response_45',['response',['../classQUnfold_1_1plot_1_1QUnfoldPlotter_1_1QUnfoldPlotter.html#a4885213e2614b8e91840fcda78ab276b',1,'QUnfold::plot::QUnfoldPlotter::QUnfoldPlotter']]]
+  ['r_57',['R',['../classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html#a1b78a88de279948727162a8ae915c82c',1,'QUnfold::core::QUnfoldQUBO::QUnfoldQUBO']]],
+  ['reg_58',['reg',['../classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html#afcb3fec62b79d7c2441dbc9d3f2f73ab',1,'QUnfold::core::QUnfoldQUBO::QUnfoldQUBO']]],
+  ['response_59',['response',['../classQUnfold_1_1plot_1_1QUnfoldPlotter_1_1QUnfoldPlotter.html#a4885213e2614b8e91840fcda78ab276b',1,'QUnfold::plot::QUnfoldPlotter::QUnfoldPlotter']]]
 ];
