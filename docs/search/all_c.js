@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['warning_29',['WARNING',['../namespaceQUnfold_1_1utils_1_1custom__logger.html#ac92128c397ee4910425081820a12f077',1,'QUnfold::utils::custom_logger']]]
+  ['unfolded_30',['unfolded',['../classQUnfold_1_1plot_1_1QUnfoldPlotter_1_1QUnfoldPlotter.html#ad7fa7406143af2128b370c96a954bb76',1,'QUnfold::plot::QUnfoldPlotter::QUnfoldPlotter']]]
 ];

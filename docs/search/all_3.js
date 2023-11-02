@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['fromroot_2epy_4',['FromROOT.py',['../FromROOT_8py.html',1,'']]]
+  ['d_4',['d',['../classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html#acce8b71e27b321a5081a9cd0fd5c4a90',1,'QUnfold::core::QUnfoldQUBO::QUnfoldQUBO']]]
 ];

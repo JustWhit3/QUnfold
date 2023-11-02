@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['d_3',['d',['../classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html#acce8b71e27b321a5081a9cd0fd5c4a90',1,'QUnfold::core::QUnfoldQUBO::QUnfoldQUBO']]]
+  ['compute_5fenergy_3',['compute_energy',['../classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html#a05035765a8abc76865bfb571c545447f',1,'QUnfold::core::QUnfoldQUBO::QUnfoldQUBO']]]
 ];

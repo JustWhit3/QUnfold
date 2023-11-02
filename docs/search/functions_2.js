@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['saveplot_45',['savePlot',['../classQUnfold_1_1plot_1_1QUnfoldPlotter_1_1QUnfoldPlotter.html#a088a9c33b2bec576ecba34fb6a28f413',1,'QUnfold::plot::QUnfoldPlotter::QUnfoldPlotter']]],
-  ['saveresponse_46',['saveResponse',['../classQUnfold_1_1plot_1_1QUnfoldPlotter_1_1QUnfoldPlotter.html#adc179df7a64a8d636413b5424300b0d2',1,'QUnfold::plot::QUnfoldPlotter::QUnfoldPlotter']]],
-  ['solve_5fhybrid_5fsampler_47',['solve_hybrid_sampler',['../classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html#a40f2710d8ed18d0aad874ac8edf11a3e',1,'QUnfold::core::QUnfoldQUBO::QUnfoldQUBO']]],
-  ['solve_5fsimulated_5fannealing_48',['solve_simulated_annealing',['../classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html#a18b52e5eab13161e3ef52c3775d1c9e7',1,'QUnfold::core::QUnfoldQUBO::QUnfoldQUBO']]]
+  ['plot_45',['plot',['../classQUnfold_1_1plot_1_1QUnfoldPlotter_1_1QUnfoldPlotter.html#a3dea6ff9a7f4d71519923220719f74be',1,'QUnfold::plot::QUnfoldPlotter::QUnfoldPlotter']]],
+  ['plotresponse_46',['plotResponse',['../classQUnfold_1_1plot_1_1QUnfoldPlotter_1_1QUnfoldPlotter.html#a057c684b4ec15da84206897fc83e5615',1,'QUnfold::plot::QUnfoldPlotter::QUnfoldPlotter']]]
 ];
