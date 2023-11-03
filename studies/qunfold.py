@@ -26,16 +26,14 @@ def qunfold_plot_results(true, meas, unfolded, distr, binning, solver, ext="png"
 
     _, ax = plt.subplots(figsize=(9, 6))
     for histo, label in [(true, "True"), (meas, "Meas")]:
-        y = histo[1:-1]
-        steps = np.append(y, [y[-1]])
+        steps = np.append(histo, [histo[-1]])
         ax.step(binning, steps, label=label, where="post")
 
     binwidth = binning[2] - binning[1]
     x = binning[:-1] + (binwidth / 2)
-    y = unfolded[1:-1]
-    chi2 = round(compute_chi2_dof(y, true[1:-1]), 2)
+    chi2 = round(compute_chi2_dof(unfolded, true), 2)
     label = rf"Unfolded {solver} $\chi^2 = {chi2}$"
-    ax.scatter(x, y, label=label, marker="o", s=30, c="limegreen")
+    ax.scatter(x, unfolded, label=label, marker="o", s=30, c="limegreen")
     ax.legend()
     plt.savefig(f"{path}{distr}/unfolded_{solver}.{ext}")
     print(

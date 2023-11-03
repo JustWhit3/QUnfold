@@ -120,9 +120,8 @@ def generate_data(distr, num_samples, num_bins, min_bin, max_bin, bias, smear, e
     generator = generators[distr]
     parameters = distributions[distr]["parameters"]
 
-    # Set histograms binning with overflow bins
+    # Set histograms binning
     bins = np.linspace(min_bin, max_bin, num_bins + 1)
-    bins = np.array([-np.inf] + bins.tolist() + [np.inf])
 
     # Generate true and meas histograms
     true_data = generator(*parameters, size=num_samples)
