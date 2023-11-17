@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['saveplot_20',['savePlot',['../classQUnfold_1_1plot_1_1QUnfoldPlotter_1_1QUnfoldPlotter.html#a088a9c33b2bec576ecba34fb6a28f413',1,'QUnfold::plot::QUnfoldPlotter::QUnfoldPlotter']]],
-  ['saveresponse_21',['saveResponse',['../classQUnfold_1_1plot_1_1QUnfoldPlotter_1_1QUnfoldPlotter.html#adc179df7a64a8d636413b5424300b0d2',1,'QUnfold::plot::QUnfoldPlotter::QUnfoldPlotter']]],
-  ['solve_5fhybrid_5fsampler_22',['solve_hybrid_sampler',['../classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html#a40f2710d8ed18d0aad874ac8edf11a3e',1,'QUnfold::core::QUnfoldQUBO::QUnfoldQUBO']]],
-  ['solve_5fsimulated_5fannealing_23',['solve_simulated_annealing',['../classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html#a18b52e5eab13161e3ef52c3775d1c9e7',1,'QUnfold::core::QUnfoldQUBO::QUnfoldQUBO']]]
+  ['r_22',['R',['../classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html#a1b78a88de279948727162a8ae915c82c',1,'QUnfold::core::QUnfoldQUBO::QUnfoldQUBO']]],
+  ['response_23',['response',['../classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html#a82bd47d25cb4c4ce437b14b400d6ccac',1,'QUnfold.core.QUnfoldQUBO.QUnfoldQUBO.response()'],['../classQUnfold_1_1plot_1_1QUnfoldPlotter_1_1QUnfoldPlotter.html#a4885213e2614b8e91840fcda78ab276b',1,'QUnfold.plot.QUnfoldPlotter.QUnfoldPlotter.response()']]]
 ];

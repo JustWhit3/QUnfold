@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['lam_6',['lam',['../classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html#a3091dd29f0f7ae7c0ec61548576a2041',1,'QUnfold::core::QUnfoldQUBO::QUnfoldQUBO']]]
+  ['initialize_5fqubo_5fmodel_7',['initialize_qubo_model',['../classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html#ac1499a2cfc69fe7fb5f922e6b616d0e3',1,'QUnfold::core::QUnfoldQUBO::QUnfoldQUBO']]]
 ];

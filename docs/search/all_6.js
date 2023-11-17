@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['measured_7',['measured',['../classQUnfold_1_1plot_1_1QUnfoldPlotter_1_1QUnfoldPlotter.html#a9807f7bf3a7f725f869d05aa20fa1ce7',1,'QUnfold::plot::QUnfoldPlotter::QUnfoldPlotter']]]
+  ['labels_8',['labels',['../classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html#ae6c5af72bc73263bbee24fc67643afe2',1,'QUnfold::core::QUnfoldQUBO::QUnfoldQUBO']]],
+  ['lam_9',['lam',['../classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html#a3091dd29f0f7ae7c0ec61548576a2041',1,'QUnfold::core::QUnfoldQUBO::QUnfoldQUBO']]]
 ];

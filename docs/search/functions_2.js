@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['plot_44',['plot',['../classQUnfold_1_1plot_1_1QUnfoldPlotter_1_1QUnfoldPlotter.html#a3dea6ff9a7f4d71519923220719f74be',1,'QUnfold::plot::QUnfoldPlotter::QUnfoldPlotter']]],
-  ['plotresponse_45',['plotResponse',['../classQUnfold_1_1plot_1_1QUnfoldPlotter_1_1QUnfoldPlotter.html#a057c684b4ec15da84206897fc83e5615',1,'QUnfold::plot::QUnfoldPlotter::QUnfoldPlotter']]]
+  ['initialize_5fqubo_5fmodel_51',['initialize_qubo_model',['../classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html#ac1499a2cfc69fe7fb5f922e6b616d0e3',1,'QUnfold::core::QUnfoldQUBO::QUnfoldQUBO']]]
 ];
