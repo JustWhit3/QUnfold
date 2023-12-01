@@ -92,9 +92,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9466642a19feeb9160eefa1e7cdbd876"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html#a9466642a19feeb9160eefa1e7cdbd876">set_lam_parameter</a> (self, <a class="el" href="classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html#a3091dd29f0f7ae7c0ec61548576a2041">lam</a>)</td></tr>
 <tr class="memdesc:a9466642a19feeb9160eefa1e7cdbd876"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the lambda regularization parameter.  <a href="classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html#a9466642a19feeb9160eefa1e7cdbd876">More...</a><br /></td></tr>
 <tr class="separator:a9466642a19feeb9160eefa1e7cdbd876"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2157f107224d3a6b4295038bc30ff89"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html#af2157f107224d3a6b4295038bc30ff89">initialize_qubo_model</a> (self, optimize_vars_range=True)</td></tr>
-<tr class="memdesc:af2157f107224d3a6b4295038bc30ff89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize QUBO model and BQM instance for the unfolding problem.  <a href="classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html#af2157f107224d3a6b4295038bc30ff89">More...</a><br /></td></tr>
-<tr class="separator:af2157f107224d3a6b4295038bc30ff89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab93964acbf621e9d0afc381b472b5760"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html#ab93964acbf621e9d0afc381b472b5760">initialize_qubo_model</a> (self, optimize_vars_range=False)</td></tr>
+<tr class="memdesc:ab93964acbf621e9d0afc381b472b5760"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize QUBO model and BQM instance for the unfolding problem.  <a href="classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html#ab93964acbf621e9d0afc381b472b5760">More...</a><br /></td></tr>
+<tr class="separator:ab93964acbf621e9d0afc381b472b5760"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18b52e5eab13161e3ef52c3775d1c9e7"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html#a18b52e5eab13161e3ef52c3775d1c9e7">solve_simulated_annealing</a> (self, num_reads=100, seed=None)</td></tr>
 <tr class="memdesc:a18b52e5eab13161e3ef52c3775d1c9e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solve the unfolding QUBO problem using the Simulated Annealing sampler.  <a href="classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html#a18b52e5eab13161e3ef52c3775d1c9e7">More...</a><br /></td></tr>
 <tr class="separator:a18b52e5eab13161e3ef52c3775d1c9e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -206,8 +206,8 @@ float energy for the given input. </dd></dl>
 
 </div>
 </div>
-<a id="af2157f107224d3a6b4295038bc30ff89"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2157f107224d3a6b4295038bc30ff89">&#9670;&nbsp;</a></span>initialize_qubo_model()</h2>
+<a id="ab93964acbf621e9d0afc381b472b5760"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab93964acbf621e9d0afc381b472b5760">&#9670;&nbsp;</a></span>initialize_qubo_model()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -222,7 +222,7 @@ float energy for the given input. </dd></dl>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>optimize_vars_range</em> = <code>True</code>&#160;</td>
+          <td class="paramname"><em>optimize_vars_range</em> = <code>False</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -233,7 +233,7 @@ float energy for the given input. </dd></dl>
 </div><div class="memdoc">
 
 <p>Initialize QUBO model and BQM instance for the unfolding problem. </p>
-<dl class="section user"><dt>Parameters</dt><dd>optimize_vars_range (bool, optional): enables optimal range for the integer variables (default is True). </dd></dl>
+<dl class="section user"><dt>Parameters</dt><dd>optimize_vars_range (bool, optional): enables optimal range for the integer variables (default is False). </dd></dl>
 
 </div>
 </div>
