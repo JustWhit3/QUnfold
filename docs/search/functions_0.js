@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_5f_5finit_5f_5f_49',['__init__',['../classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html#ab03ea26cef0e4c16695fce3b667d9575',1,'QUnfold.core.QUnfoldQUBO.QUnfoldQUBO.__init__()'],['../classQUnfold_1_1plot_1_1QUnfoldPlotter_1_1QUnfoldPlotter.html#ad2aaec96e2ee904394bebcf11dde6e2d',1,'QUnfold.plot.QUnfoldPlotter.QUnfoldPlotter.__init__()']]]
+  ['_5f_5finit_5f_5f_54',['__init__',['../classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html#ab03ea26cef0e4c16695fce3b667d9575',1,'QUnfold.core.QUnfoldQUBO.QUnfoldQUBO.__init__()'],['../classQUnfold_1_1plot_1_1QUnfoldPlotter_1_1QUnfoldPlotter.html#ad2aaec96e2ee904394bebcf11dde6e2d',1,'QUnfold.plot.QUnfoldPlotter.QUnfoldPlotter.__init__()']]]
 ];

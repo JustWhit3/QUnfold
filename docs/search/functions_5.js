@@ -1,7 +1,10 @@
 var searchData=
 [
-  ['th1_5fto_5farray_61',['TH1_to_array',['../namespaceQUnfold_1_1utility_1_1FromROOT.html#ab06091b2c3e890084447dc5ac845fccc',1,'QUnfold::utility::FromROOT']]],
-  ['th2_5fto_5farray_62',['TH2_to_array',['../namespaceQUnfold_1_1utility_1_1FromROOT.html#aba3ba520adc8577c681a6806568aa4f6',1,'QUnfold::utility::FromROOT']]],
-  ['tmatrix_5fto_5farray_63',['TMatrix_to_array',['../namespaceQUnfold_1_1utility_1_1FromROOT.html#a06c88ca85b6b93d28c5bbe5ea58bf717',1,'QUnfold::utility::FromROOT']]],
-  ['tvector_5fto_5farray_64',['TVector_to_array',['../namespaceQUnfold_1_1utility_1_1FromROOT.html#ac0af575d37aee98712ca6bbb4ddf738a',1,'QUnfold::utility::FromROOT']]]
+  ['saveplot_60',['savePlot',['../classQUnfold_1_1plot_1_1QUnfoldPlotter_1_1QUnfoldPlotter.html#a088a9c33b2bec576ecba34fb6a28f413',1,'QUnfold::plot::QUnfoldPlotter::QUnfoldPlotter']]],
+  ['saveresponse_61',['saveResponse',['../classQUnfold_1_1plot_1_1QUnfoldPlotter_1_1QUnfoldPlotter.html#adc179df7a64a8d636413b5424300b0d2',1,'QUnfold::plot::QUnfoldPlotter::QUnfoldPlotter']]],
+  ['set_5flam_5fparameter_62',['set_lam_parameter',['../classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html#a9466642a19feeb9160eefa1e7cdbd876',1,'QUnfold::core::QUnfoldQUBO::QUnfoldQUBO']]],
+  ['set_5fmeasured_63',['set_measured',['../classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html#a70ae3f952e4d1e03ad3bb63e08162f01',1,'QUnfold::core::QUnfoldQUBO::QUnfoldQUBO']]],
+  ['set_5fresponse_64',['set_response',['../classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html#a416b8228f372087bb2030e147d28eb2c',1,'QUnfold::core::QUnfoldQUBO::QUnfoldQUBO']]],
+  ['solve_5fhybrid_5fsampler_65',['solve_hybrid_sampler',['../classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html#a40f2710d8ed18d0aad874ac8edf11a3e',1,'QUnfold::core::QUnfoldQUBO::QUnfoldQUBO']]],
+  ['solve_5fsimulated_5fannealing_66',['solve_simulated_annealing',['../classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html#a18b52e5eab13161e3ef52c3775d1c9e7',1,'QUnfold::core::QUnfoldQUBO::QUnfoldQUBO']]]
 ];

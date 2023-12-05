@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['unfold_53',['unfold',['../classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html#aae9aed174a177982f35f979e004f1271',1,'QUnfold::core::QUnfoldQUBO::QUnfoldQUBO']]]
+  ['th1_5fto_5farray_67',['TH1_to_array',['../namespaceQUnfold_1_1utility_1_1FromROOT.html#ab06091b2c3e890084447dc5ac845fccc',1,'QUnfold::utility::FromROOT']]],
+  ['th2_5fto_5farray_68',['TH2_to_array',['../namespaceQUnfold_1_1utility_1_1FromROOT.html#aba3ba520adc8577c681a6806568aa4f6',1,'QUnfold::utility::FromROOT']]],
+  ['tmatrix_5fto_5farray_69',['TMatrix_to_array',['../namespaceQUnfold_1_1utility_1_1FromROOT.html#a06c88ca85b6b93d28c5bbe5ea58bf717',1,'QUnfold::utility::FromROOT']]],
+  ['tvector_5fto_5farray_70',['TVector_to_array',['../namespaceQUnfold_1_1utility_1_1FromROOT.html#ac0af575d37aee98712ca6bbb4ddf738a',1,'QUnfold::utility::FromROOT']]]
 ];

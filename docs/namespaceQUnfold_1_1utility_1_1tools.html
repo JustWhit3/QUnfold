@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>QUnfold: src/QUnfold/utility Directory Reference</title>
+<title>QUnfold: QUnfold.utility.tools Namespace Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,24 +62,64 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_69848399202455be82aad299e512dc03.html">QUnfold</a></li><li class="navelem"><a class="el" href="dir_80e38c2293cffcca2c3ddd4b960386e4.html">utility</a></li>  </ul>
+<li class="navelem"><b>QUnfold</b></li><li class="navelem"><a class="el" href="namespaceQUnfold_1_1utility.html">utility</a></li><li class="navelem"><a class="el" href="namespaceQUnfold_1_1utility_1_1tools.html">tools</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">utility Directory Reference</div>  </div>
+<div class="title">QUnfold.utility.tools Namespace Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="files"></a>
-Files</h2></td></tr>
-<tr class="memitem:utility_2____init_____8py"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utility_2____init_____8py.html">__init__.py</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:FromROOT_8py"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="FromROOT_8py.html">FromROOT.py</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:tools_8py"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tools_8py.html">tools.py</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a22345a6ea5307552b64e9c0c75ef51b9"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceQUnfold_1_1utility_1_1tools.html#a22345a6ea5307552b64e9c0c75ef51b9">normalize_response</a> (response, truth_mc)</td></tr>
+<tr class="memdesc:a22345a6ea5307552b64e9c0c75ef51b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function used to normalize the response matrix using the Monte Carlo generated truth distribution.  <a href="namespaceQUnfold_1_1utility_1_1tools.html#a22345a6ea5307552b64e9c0c75ef51b9">More...</a><br /></td></tr>
+<tr class="separator:a22345a6ea5307552b64e9c0c75ef51b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a22345a6ea5307552b64e9c0c75ef51b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22345a6ea5307552b64e9c0c75ef51b9">&#9670;&nbsp;</a></span>normalize_response()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def QUnfold.utility.tools.normalize_response </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>response</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>truth_mc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function used to normalize the response matrix using the Monte Carlo generated truth distribution. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">response</td><td>the response matrix to be normalized. </td></tr>
+    <tr><td class="paramname">truth_mc</td><td>the Monte Carlo truth histogram used to normalize the response matrix.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd>
+<dd>
+numpy the normalized response matrix. </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
