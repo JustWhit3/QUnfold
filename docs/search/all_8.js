@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['normalize_5fresponse_12',['normalize_response',['../namespaceQUnfold_1_1utility_1_1tools.html#a22345a6ea5307552b64e9c0c75ef51b9',1,'QUnfold::utility::tools']]]
+  ['measured_11',['measured',['../classQUnfold_1_1plot_1_1QUnfoldPlotter_1_1QUnfoldPlotter.html#a9807f7bf3a7f725f869d05aa20fa1ce7',1,'QUnfold::plot::QUnfoldPlotter::QUnfoldPlotter']]],
+  ['model_12',['model',['../classQUnfold_1_1core_1_1QUnfoldQUBO_1_1QUnfoldQUBO.html#a12119ecd7d128242f31f0b7e12824cf6',1,'QUnfold::core::QUnfoldQUBO::QUnfoldQUBO']]]
 ];
